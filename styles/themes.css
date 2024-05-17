@@ -11,8 +11,8 @@
   --accent-color: #00cc14;
   --button-text: #00cc14;
   --gradient-color: #000;
-  --gradient-color-1: #007f0c;
-  --gradient-color-2: #004306;
+  --main-gradient-color: #007f0c;
+  --minor-gradient-color: #004306;
 }
 
 :root.theme-light {
@@ -22,8 +22,8 @@
   --accent-color: #000;
   --button-text: #fff;
   --gradient-color: #d3d3d3;
-  --gradient-color-1: #e7e7e7;
-  --gradient-color-2: #1a1a1a;
+  --main-gradient-color: #e7e7e7;
+  --minor-gradient-color: #1a1a1a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,7 +34,7 @@
     --accent-color: #00cc14;
     --button-text: #00cc14;
     --gradient-color: #000;
-    --gradient-color-1: #007f0c;
-    --gradient-color-2: #004306;
+    --main-gradient-color: #007f0c;
+    --minor-gradient-color: #004306;
   }
 }

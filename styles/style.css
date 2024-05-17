@@ -31,7 +31,7 @@
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(var(--gradient-color-1), var(--gradient-color-2));
+    linear-gradient(var(--main-gradient-color), var(--minor-gradient-color));
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
@@ -154,6 +154,8 @@
   border-block-end: 2px solid var(--accent-color);
   inline-size: 100%;
   aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .contrast {
@@ -291,12 +293,12 @@
   mix-blend-mode: difference;
 }
 
-.footer {
+.save {
   margin: 0 auto 105px;
   inline-size: max-content;
 }
 
-.footer__button {
+.save__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,7 +308,7 @@
   inline-size: 335px;
 }
 
-.footer__floppy {
+.save__floppy {
   position: relative;
   z-index: 10;
   display: block;
@@ -362,15 +364,15 @@
 }
 
 @media (width <= 375px) {
-  :root {
-    --main-inline-size: 100%;
+  .width {
+    inline-size: 100%;
   }
 
   .card__label {
     margin: 25px 13px;
   }
 
-  .footer__button {
+  .save__button {
     flex-direction: column;
     inline-size: 306px;
   }
